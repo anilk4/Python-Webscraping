@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="An example HTML page using a variety of HTML tags."
+    />
+    <title>HTML Example with Most Tags</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Link to external CSS -->
+    <style>
+      /* Internal CSS for styling */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      header,
+      footer {
+        background-color: #333;
+        color: #fff;
+        padding: 1rem;
+        text-align: center;
+      }
+      nav a {
+        margin: 0 10px;
+        color: #fff;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <h1>Welcome to My Website</h1>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+      <!-- Section with article and aside -->
+      <section id="home">
+        <article>
+          <h2>Introduction</h2>
+          <p>
+            This is an example of an HTML document that uses a wide variety of
+            HTML tags.
+          </p>
+          <p>
+            <strong>Strong text</strong> and <em>emphasized text</em> are often
+            used for highlighting.
+          </p>
+          <blockquote cite="https://example.com">
+            "This is a sample blockquote, often used to highlight a quote."
+          </blockquote>
+          <p>Here's a list of items:</p>
+          <ul>
+            <li>First item</li>
+            <li>Second item</li>
+            <li>Third item</li>
+          </ul>
+          <p>And a numbered list:</p>
+          <ol>
+            <li>First item</li>
+            <li>Second item</li>
+            <li>Third item</li>
+          </ol>
+          <p>
+            Here's a link to
+            <a href="https://example.com">an external website</a>.
+          </p>
+        </article>
+        <aside>
+          <h3>Related Links</h3>
+          <ul>
+            <li><a href="#services">Our Services</a></li>
+            <li><a href="#about">About Us</a></li>
+          </ul>
+        </aside>
+      </section>
+
+      <!-- Services Section with a table -->
+      <section id="services">
+        <h2>Our Services</h2>
+        <table border="1">
+          <caption>
+            Service Pricing Table
+          </caption>
+          <thead>
+            <tr>
+              <th>Service</th>
+              <th>Description</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Web Development</td>
+              <td>Building responsive and modern websites.</td>
+              <td>$1000</td>
+            </tr>
+            <tr>
+              <td>SEO Optimization</td>
+              <td>Improving website visibility in search engines.</td>
+              <td>$500</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- About Section with an embedded image -->
+      <section id="about">
+        <h2>About Us</h2>
+        <p>
+          We are a team of professionals dedicated to providing top-notch web
+          services.
+        </p>
+        <figure>
+          <img src="team-photo.jpg" alt="Our Team Photo" width="500" />
+          <figcaption>Our team at work</figcaption>
+        </figure>
+      </section>
+
+      <!-- Contact Section with a form -->
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="submit-form.php" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required /><br /><br />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required /><br /><br />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea
+          ><br /><br />
+
+          <input type="submit" value="Send Message" />
+        </form>
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+      <p>&copy; 2024 My Website. All rights reserved.</p>
+      <p>
+        Follow us on <a href="https://twitter.com">Twitter</a>,
+        <a href="https://facebook.com">Facebook</a>,
+        <a href="https://instagram.com">Instagram</a>.
+      </p>
+    </footer>
+
+    <!-- Embedded Script -->
+    <script>
+      console.log("Welcome to my website!");
+    </script>
+  </body>
+</html>
