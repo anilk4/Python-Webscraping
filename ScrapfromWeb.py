@@ -15,18 +15,18 @@ def find_jobs():
     jobs = soup.find_all('li', class_='clearfix job-bx wht-shd-bx')
 
     found_job = False  # To track if any job is found
-    for job in jobs:
+    for index, job in enumerate(jobs):
         pub_date = job.find('span', class_='sim-posted').span.text
         if 'few' in pub_date:
             company_name = job.find('h3', class_='joblist-comp-name').text
             skills = job.find('span', class_='srp-skills').text.lower()
             more_info = job.header.h2.a['href']
             if unfamiliar_skill.lower() not in skills:
-
-                print(f'Company Name: {company_name.strip()}')
-                print(f'Skills: {skills.strip()}')
-                print(f'Link to job: {more_info}')
-                print('')
+                with open(f'posts/{index}.txt', 'w') as f:
+                    f.write(f'Company Name: {company_name.strip()}')
+                    f.write(f'Skills: {skills.strip()}')
+                    f.write(f'Link to job: {more_info}')
+                print(f'File saved: {index}')
 
                 found_job = True
 
